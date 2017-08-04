@@ -8,6 +8,6 @@ digits=datasets.load_digits()
 clf=svm.SVC(gamma=0.001,C=100)#C== margin of error
 X,y=digits.data[:-10],digits.target[:-10]
 clf.fit(X,y)
-print(clf.predict(digits.data[5]))
-plt.imshow(digits.images[1])
+print(clf.predict(digits.data[9]))
+plt.imshow(digits.images[9])
 plt.show()
